@@ -1,6 +1,4 @@
-# DOCX Generator
-## Written with PHP
-
+## DOCX Generator (Written with PHP)
 
 # Purposes
 
