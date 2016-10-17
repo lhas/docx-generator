@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOCX Generator</title>
+
+  <script src="//cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <style type="text/css">
+    body {
+      overflow: hidden;
+    }
+    h1 {
+      font-family: 'Oswald', sans-serif;
+    }
+    .delay1 {
+      animation-delay: 0.5s;
+    }
+    .delay2 {
+      animation-delay: 1.75s;
+      position: relative;
+      z-index: 2;
+    }
+    .delay3 {
+      animation-delay: 2.5s;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body class="purple darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text delay1 animated tada center">DOCX Generator</h1>
+
+        <div class="card animated delay2 zoomIn z-depth-5 center white">
+          <div class="card-content">
+            <span class="card-title purple-text">Please, submit your content:</span>
+
+            <div class="form-group">
+              <textarea name="editor1" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="center animated delay3 zoomInDown">
+          <button class="btn purple white-text lighten-1 z-depth-4">I want the CV on .docx format</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
